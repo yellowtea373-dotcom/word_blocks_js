@@ -1,0 +1,6 @@
+{
+  "name": "word_blocks_js",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "selftest.js"
+}
