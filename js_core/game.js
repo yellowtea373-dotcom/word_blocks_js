@@ -125,4 +125,12 @@ export class Game { //класс, доступный для других фай�
             }
         }
     }
+
+    moveLeftRight(direction) {
+        if (!this.currentBlock) return;
+
+        if (!this.checkCollision(this.currentBlock, 0, direction)) {
+            this.currentBlock.col += direction;
+        }
+    }
 }

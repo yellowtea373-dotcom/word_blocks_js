@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Blocks Widget</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Холст, на котором будем рисовать игру -->
+        <canvas id="game" width="800" height="600"></canvas>
+
+        <!-- Панель со счётом и подсказками -->
+        <div id="hud">
+            <h2>Счёт: <span id="score">0</span></h2>
+            <h3>Слово: <span id="current-word"></span></h3>
+            <p>Нажмите <b>Enter</b>, чтобы собрать слово</p>
+        </div>
+    </div>
+
+    <!-- Подключение скрипта -->
+    <script type="module" src="js/widget.js"></script>
+</body>
+</html>

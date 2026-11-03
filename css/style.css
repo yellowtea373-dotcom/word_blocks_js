@@ -1,0 +1,58 @@
+/*http://localhost:8000*/
+/* Общие настройки - коричневая тема */
+body {
+    background-color: #2b1d14; /* темный шоколадный фон */
+    color: #f5deb3; /* цвет пшеницы для текста */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер для холста и панели */
+#game-container {
+    display: flex;
+    gap: 20px;
+    background: #3e2a1e; /* цвет кофе с молоком */
+    padding: 20px; /* отступ */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Холст */
+canvas {
+    background-color: #1a110d; /* очень темный коричневый */
+    border: 2px solid #5c4033; /* рамка цвета темного дерева */
+    border-radius: 8px;
+}
+
+/* Панель со счётом */
+#hud {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+/* Цвет счёта - золотистый */
+#score {
+    color: #ffb347; /* золотисто-оранжевый */
+    font-size: 28px;
+}
+
+/* Цвет собранного слова - светло-зеленый (для контраста на коричневом) */
+#current-word {
+    color: #a4d66d;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+    button:hover {
+        background-color: #a0522d; /* светлее при наведении */
+    }
